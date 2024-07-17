@@ -1,0 +1,347 @@
+:root {
+  --bodyBgndColor: #353333;
+  --cardBackground: #60676f;
+  --headerBgColor: #416338;
+  --bodyFontColor: #d5e3b8;
+  --firstBorder: #d5e3b8;
+  --headNavBotBor: #fff;
+  --boxShadow: #bbb9b9;
+  --hoverBgColor: #03d9f5;
+  --hoverTextColor: #120b52;
+  --skillsBgColor: #416443;
+  --resumeCardBorder: #fff;
+  --textCardBgColor: #701909;
+  --fontFamily: "ubuntu", Sans-Serif;
+}
+
+div,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #03d9f5;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url(../images/hmtlbg1.jpg) no-repeat center center fixed;
+  color: #cccccc;
+  font: var(--fontFamily);
+  text-align: center;
+  background-size: cover;
+}
+
+.page-wrapper {
+  margin: 0px auto 60px;
+  width: 1200px;
+  border-top: 0px solid #000000;
+  border-right: 2px solid #4e9caa;
+  border-bottom: 2px solid #4e9caa;
+  border-left: 2px solid #4e9caa;
+  padding: 0px 0px 50px;
+  background: var(--bodyBgndColor); /*#404040 url(bandwidthkiller.jpg) no-repeat center bottom;*/
+  text-align: left;
+  position: relative;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--headerBgColor);
+  height: auto;
+  margin: 0 0 25px 0;
+  border-bottom: 1px var(--headNavBotBor) solid;
+}
+#nav_header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1rem;
+  height: auto;
+  width: 100%;
+  font-weight: bold;
+}
+
+.subhead {
+  margin: 12px 0px 10px 262px;
+  width: 930px;
+}
+
+.profile_pic {
+  width: 250px;
+  height: 320px;
+  border: 3px rgb(20, 6, 83) solid;
+  border-radius: 20%;
+  display: inline-block;
+}
+.summary {
+  clear: both;
+  margin: 0px 0px 0px 5px;
+  width: 160px;
+  float: left;
+}
+
+.hello_world {
+  font-size: 46px;
+  font-weight: 1000;
+  color: var(--bodyFontColor);
+}
+
+.sameColor {
+  color: var(--bodyFontColor);
+}
+
+.titles {
+  margin: 0px 0px 0px 30px;
+}
+
+.main-format {
+  margin: 10px 0px 10px 260px;
+  width: 930px;
+  border: 2px solid #4e9caa;
+  padding: 10px 0px;
+  background: #60676f; /*url(zen-image.jpg) repeat center top;*/
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.main-format2right {
+  margin: 0px 0px 0px 5px;
+}
+.main-format2left {
+  margin: 0px 5px 0px 0px;
+}
+.main-format2right,
+.main-format2left {
+  /*margin: 10px 10px 10px 10px;*/
+  width: 465px;
+  border: 2px solid #4e9caa;
+  padding: 10px 0px;
+  background: #60676f; /*url(zen-image.jpg) repeat center top;*/
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.main-2x2 {
+  margin: 10px 0px 10px 260px;
+  width: 930px;
+  /*border: 2px solid #4e9caa;*/
+  padding: 10px 0px;
+  /*background: #60676f; /*url(zen-image.jpg) repeat center top;*/
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.main-format3 {
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+  border: 2px solid #4e9caa;
+  padding: 10px 0px;
+  background: #60676f; /*url(zen-image.jpg) repeat center top;*/
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.main-format p,
+.main-format2right p,
+.main-format2left p,
+.main-2x2 p {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--bodyFontColor);
+}
+
+.main-format p {
+  text-align: left;
+}
+
+.service-icon,
+.service-icon h5 {
+  background-color: #fff;
+  color: #d5e3b8;
+  height: 6rem;
+  width: 6rem;
+  display: block;
+  line-height: 6.5rem;
+  font-size: 3.5rem;
+}
+
+.project_img_lg {
+  margin-left: 175px;
+  opacity: 1;
+  display: block;
+}
+
+article:hover .project_img {
+  transition: transform 1.5s;
+  transform: scale(1.25);
+  opacity: 0.5;
+}
+article:hover .card_lg,
+article:hover .card_sm {
+  opacity: 1;
+  transition: transform 1.5s;
+}
+
+.card_sm,
+.card_lg {
+  opacity: 0;
+  position: relative;
+  top: -15rem;
+  height: auto;
+  width: 20rem;
+  text-align: center;
+}
+.card_text_sm,
+.card_text_lg {
+  border-radius: 0% 25px 0% 25px;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: -6px 6px 3px var(--boxShadow);
+  position: absolute;
+  background-color: var(--textCardBgColor);
+  color: white;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+.card_text_lg {
+  top: -30px;
+  left: 340px;
+  height: auto;
+  width: 250px;
+}
+
+.card_text_sm {
+  top: 10px;
+  left: 140px;
+  height: auto;
+  width: 180px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.anchor_text,
+.repoLink,
+figcaption {
+  color: var(--bodyFontColor);
+  text-align: center;
+  line-height: 48px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+.anchor_text:visited {
+  color: var(--bodyFontColor);
+  text-align: center;
+  line-height: 48px;
+  display: block;
+}
+a:hover,
+.anchor_text:hover {
+  color: var(--bodyFontColor);
+  text-decoration: underline;
+  text-align: center;
+
+  display: block;
+}
+.sidebar {
+  margin: 7em 10px 0px 12px;
+  padding: 0px;
+  width: 200px;
+  background: url(ani2.gif) no-repeat; /* this is just here as a preloader for the nav mouseover to kill the delay when it's first hit.. it can't be seen in this position because of an overlaying background image*/
+  position: absolute;
+  left: 0px;
+  top: 360px;
+  z-index: 2;
+}
+
+.sidebar h3 {
+  width: 200px;
+  border-top: 0px #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 0px #000000;
+  border-left: 0px #000000;
+  margin: 0px;
+  padding: 0px;
+  background: url(to_h3back_04.gif) no-repeat left top;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  top: -24px;
+  z-index: 1;
+  left: -2px;
+  height: 23px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: center;
+}
+.sidebar li {
+  margin: 0px;
+  padding: 6px 0px;
+}
+.sidebar a {
+  padding-left: 32px;
+  margin-left: 6px;
+  display: block;
+  background: url(ani1.gif) no-repeat left center;
+  color: #bbbbbb;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+}
+.sidebar a:hover {
+  background: url(ani2.gif) no-repeat left center;
+  color: #ebebeb;
+}
+
+.sidebar a {
+  margin: 0px 0px -10px;
+  padding: 0px;
+  display: inline;
+  background: url(none);
+  text-transform: capitalize;
+}
+.sidebar ul {
+  margin: 0px;
+  padding-left: 15px;
+  text-align: left;
+}
